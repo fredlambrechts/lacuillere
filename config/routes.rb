@@ -8,7 +8,6 @@ Rails.application.routes.draw do
       get 'chef', to: 'restaurants#chef'
     end
 
-
   end
 
 

@@ -66,9 +66,6 @@ class RestaurantsController < ApplicationController
     end
   end
 
-  def top
-    @restaurants = Restaurant.where(stars: 3)
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -78,7 +75,7 @@ class RestaurantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :address, :stars)
+      params.require(:restaurant).permit(:name, :address, :category)
     end
 
     def find_restaurant

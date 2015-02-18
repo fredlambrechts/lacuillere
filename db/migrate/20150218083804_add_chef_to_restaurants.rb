@@ -1,5 +1,5 @@
 class AddChefToRestaurants < ActiveRecord::Migration
   def change
-    add_column :restaurants, :chef, :string
+    add_column :restaurants, :stars
   end
 end
